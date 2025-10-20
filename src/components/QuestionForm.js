@@ -49,7 +49,6 @@ function QuestionForm({ onAddQuestion }) {
           correctIndex: 0,
         });
       })
-      .catch((err) => console.error("Error adding question:", err));
   }
 
   return (

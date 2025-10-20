@@ -19,8 +19,7 @@ function QuestionItem({ question, onDeleteQuestion, onUpdateQuestion }) {
       body: JSON.stringify({ correctIndex: newCorrectIndex }),
     })
       .then((res) => res.json())
-      .then((updatedQuestion) => onUpdateQuestion(updatedQuestion))
-      .catch((err) => console.error("Error updating question:", err));
+      .then((updatedQuestion) => onUpdateQuestion(updatedQuestion));
   }
 
   const options = answers.map((answer, index) => (
